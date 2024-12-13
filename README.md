@@ -50,7 +50,7 @@ This script computes similairity scores, fid scores and a few other metrics. Log
 python diff_retrieval.py --arch resnet50_disc --similarity_metric dotproduct --pt_style sscd --dist-url 'tcp://localhost:10001' --world-size 1 --rank 0 --query_dir <path_to_generated_data> --val_dir <path_to_training_data>
 
 ```
-
+You may want to download the SSCD checkpoint first [here](https://drive.google.com/file/d/1PAMwyK5b5zi6WBvyENtWuWr0lpT-TYMk/view?usp=sharing)
 
 ## Data
 
@@ -75,4 +75,4 @@ This repository is released under the Apache 2.0 license as found in the [LICENS
 ```
 
 ## Acknowledgement
-We would like to thank the authors of previous related projects for generously sharing their code, especially the [Somepail](https://github.com/somepago/DCR), from which our code is adapted.
+We would like to thank the authors of previous related projects for generously sharing their code, especially the [Somepail](https://github.com/somepago/DCR), from which our code is adapted and [Wen](https://github.com/YuxinWenRick/diffusion_memorization) who provides us the SSCD checkpoint.
